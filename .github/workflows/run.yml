@@ -1,25 +1,25 @@
 name: runbot
 on:
-  #workflow_dispatch :   #only run when requested
-  #  inputs:
-  #   ai_name :
-  #     type: string
-  #     required: true
-  #   ai_role:
-  #     type: string
-  #     required: true
-  #   ai_goal_count:
-  #     type: number
-  #     required: true
-  #   ai_goal_1:
-  #     type: string
-  #     required: true
-  #   ai_goal_2:
-  #     type: string
-  #   ai_goal_3:
-  #     type: string
-  #   ai_goal_4:
-  #     type: string
+  workflow_dispatch :   #only run when requested
+    inputs:
+     ai_name :
+       type: string
+       required: true
+     ai_role:
+       type: string
+       required: true
+     ai_goal_count:
+       type: number
+       required: true
+     ai_goal_1:
+       type: string
+       required: true
+     ai_goal_2:
+       type: string
+     ai_goal_3:
+       type: string
+     ai_goal_4:
+       type: string
 
 jobs:
   run_bot:    
@@ -44,6 +44,6 @@ jobs:
         AI_GOAL_2: "'${{ inputs.ai_goal_2 }}'"
         AI_GOAL_3: "'${{ inputs.ai_goal_3 }}'"
         AI_GOAL_4: "'${{ inputs.ai_goal_4 }}'"
-        AI_GOAL_COUNT: "'${{ inputs.ai_goal_count }}'"
-        GITHUB_PAT: ${{ secrets.PAT }}
+        AI_GOAL_COUNT: 4
+        GITHUB_PAT: ${{ secrets.MIKETEST2 }}
         GITHUB_REPO: "meta-introspector/call-auto-gpt"  

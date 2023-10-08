@@ -26,7 +26,7 @@ services:
       --ai-goal "\'${AI_GOAL_3}\'" \
       --ai-goal "\'${AI_GOAL_4}\'" \
       -y --continuous      \
-      --continuous-limit 1"
+      --continuous-limit 5"
 
     # uncomment thse next 3 lines for debugging
     #entrypoint: /bin/bash

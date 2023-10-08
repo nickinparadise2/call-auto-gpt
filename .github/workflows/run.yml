@@ -4,18 +4,23 @@ on:
     inputs:
      ai_name :
        type: string
+       default: "Test3Default"
        required: true
      ai_role:
        type: string
+       default: "Act as an expert researcher capable of scraping web data"
        required: true
      ai_goal_count:
        type: number
+       default: 2
        required: true
      ai_goal_1:
        type: string
+       default: "Search the internet for a list of UN agencies"
        required: true
      ai_goal_2:
        type: string
+       default: "Scrape the website URLs of each agency and report back"
      ai_goal_3:
        type: string
      ai_goal_4:

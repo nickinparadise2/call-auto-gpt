@@ -12,7 +12,7 @@ on:
        required: true
      ai_goal_count:
        type: number
-       default: 2
+       default: "2"
        required: true
      ai_goal_1:
        type: string

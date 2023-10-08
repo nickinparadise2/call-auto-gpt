@@ -51,4 +51,4 @@ jobs:
         AI_GOAL_4: "'${{ inputs.ai_goal_4 }}'"
         AI_GOAL_COUNT: 4
         GITHUB_PAT: ${{ secrets.MIKETEST2 }}
-        GITHUB_REPO: "meta-introspector/call-auto-gpt"  
+        GITHUB_REPO: "nickinparadise2/call-auto-gpt"  

@@ -49,6 +49,7 @@ jobs:
         AI_GOAL_2: "'${{ inputs.ai_goal_2 }}'"
         AI_GOAL_3: "'${{ inputs.ai_goal_3 }}'"
         AI_GOAL_4: "'${{ inputs.ai_goal_4 }}'"
-        AI_GOAL_COUNT: 4
+        AI_GOAL_COUNT: "4"
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         GITHUB_PAT: ${{ secrets.MIKETEST2 }}
         GITHUB_REPO: "nickinparadise2/call-auto-gpt"  
